@@ -1,0 +1,747 @@
+Console.ForegroundColor = ConsoleColor.Red;
+Console.BackgroundColor = ConsoleColor.Black;
+
+
+Console.WriteLine("Seja bem-vindo ao Infort Solution ;) Nosso programa promete solucionar alguns problemas que você pode ter em seu computador. Fique à vontade para tirar dúvidas com a pessoa que está te explicando o programa :) . Infort Solution garante a você o apoio necessário para lidar com problemas que você não sabe como resolver. Bom, nosso programa foi criado pensando em você: o principal elemento dele. Mas, lembre-se que esse é apenas um protótipo, esse programa será aprimorado e evoluído nos próximos 2 anos. Então, você está convidado a voltar aqui nas próximas vezes e tirar qualquer dúvida (: \n>INFORT SOLUTION: EM BUSCA DA SOLUÇÃO< \n Deseja conhecer melhor nosso programa?");
+
+
+string[] problemas = new string[30];
+int numeros;
+string p, p2;
+string respi;
+
+problemas[0] = "Tela azul";
+problemas[1] = "Falta de som";
+problemas[2] = "Falha no HD";
+problemas[3] = "Teclado estranho";
+problemas[4] = "TouchPad não funciona";
+problemas[5] = "Computador desliga sozinho";
+problemas[6] = "Hora e data desatualizadas";
+problemas[7] = "Mouse travando";
+problemas[8] = "Máquina não conecta internet";
+problemas[9] = "Monitor não mostra nada";
+problemas[10] = "Clicar e demorar para carregar";
+problemas[11] = "Computador não liga";
+problemas[12] = "Lentidão do sistema";
+problemas[13] = "Problemas com software desatualizado:";
+problemas[14] = "Arquivos corrompidos ou perdidos";
+problemas[15] = "Problemas de segurança (vírus/malware)";
+problemas[16] = "PC superaquecendo";
+problemas[17] = "Pendrive não é reconhecido";
+problemas[18] = "Som diferente do normal";
+problemas[19] = "Problema de RAM";
+problemas[20] = "Toque fantasma na tela";
+problemas[21] = "Perda de dados";
+problemas[22] = "Problema de espaço em disco";
+problemas[23] = "Tela piscando";
+problemas[24] = "Danos por água ou líquidos";
+problemas[25] = "Problemas de reconhecimento facial";
+problemas[26] = "Aplicativos travando";
+problemas[27] = "Recursos de sistema insuficiente";
+problemas[28] = "Conexão de Internet Instável";
+problemas[29] = "Ruídos estranhos provenientes do computador";
+
+string respf; 
+int voto; 
+int[] aval = new int[2];
+
+aval[0] = 0;
+aval[1] = 0; 
+
+
+respi = Console.ReadLine();
+Console.Clear();
+do
+{
+
+
+    do
+    {
+        
+
+
+
+            Console.WriteLine("PROBLEMAS: \n 1- Tela azul \n 2- Falta de som\n 3- Falha no HD \n 4- Teclado estranho \n 5- TouchPad não funciona\n 6- Computador desliga sozinho \n 7- Hora e data desatualizadas \n 8- Mouse travando \n 9- Máquina não conecta internet \n 10- Monitor não mostra nada\n 11- Clicar e demorar para carregar\n 12- Computador não liga\n 13- Lentidão do sistema\n 14- Problemas com software desatualizado \n 15- Arquivos corrompidos ou perdidos\n 16- Problemas de segurança (virus/malware)\n 17- PC superaquecendo \n 18- Pendrive não é reconhecido\n 19- Som diferente do normal\n 20- Problema de RAM\n 21- Toque fantasma na tela\n 22- Perda de dados \n 23- Problema de espaço em disco \n 24- Tela piscando \n 25- Danos por água ou Líquidos \n 26- Problemas de reconhecimento facial\n 27- Aplicativos travando \n 28- Recursos de sistema insuficiente \n 29- Conexão de Internet Instável \n 30- Ruídos estranhos provenientes do computador. ");
+            Console.WriteLine("Digite um número conforme os problemas acima: ");
+            numeros = int.Parse(Console.ReadLine());
+            Console.Clear();
+
+            switch (numeros)
+            {
+                case 1:
+                    {
+                        Console.WriteLine("1- Clique em soluções de problemas > Opções avançadas > Confiurações de inicialização > Clique em reiniciar > Pressione a tecla 5 ou F5 para acessar o modo seguro com rede. ");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha seus drivers de hardware atualizados.\r\nEvite software instável e instalações inadequadas de drivers.\r\nMonitore a temperatura do seu computador para evitar superaquecimento.\r\nConsidere a qualidade e a compatibilidade do hardware ao montar seu computador.");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("2- Verificação de Memória: Use a ferramenta de Verificação de Memória do Windows para verificar se há problemas de memória. Isso pode ajudar a identificar e corrigir erros de RAM.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação.");
+                        }
+                        break;
+                    }
+                case 2:
+                    {
+                        Console.WriteLine("1- Verifique os Drivers de Áudio: Certifique-se de que os drivers de áudio estejam instalados e atualizados. Às vezes, problemas de som podem ser resolvidos simplesmente atualizando ou reinstalando os drivers de áudio.\r\n 2- Verifique as Configurações de Som: Verifique se o volume não está no mudo e se o dispositivo de saída de áudio está configurado corretamente nas configurações do sistema.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique as configurações de áudio e os dispositivos conectados.\r\nAtualize os drivers de áudio.\r\nVerifique a integridade dos cabos e conectores de áudio.\r\nCertifique-se de que o alto-falante ou fone de ouvido esteja funcionando corretamente. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Reinicie o Serviço de Áudio: Às vezes, reiniciar o serviço de áudio do Windows pode resolver problemas de som. Você pode fazer isso pelo Gerenciador de Tarefas.\r\n 4- Verifique o Hardware: Verifique se os alto-falantes ou fones de ouvido estão funcionando corretamente em outro dispositivo para garantir que o problema não seja no hardware.- ");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 3:
+
+                    {
+                        Console.WriteLine("1-Faça Backup dos Dados: Faça backup imediatamente de todos os dados importantes do disco rígido, se possível.\r\n 2- Verifique a Saúde do Disco Rígido: Use uma ferramenta de diagnóstico de disco rígido, como o CrystalDiskInfo, para verificar a saúde do seu disco rígido. Se estiver falhando, substitua-o o mais rápido possível.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Faça backups regulares de seus dados.\r\nEvite desligar o computador abruptamente.\r\nMonitore a saúde do disco rígido com software de diagnóstico.\r\nConsidere substituir discos rígidos mais antigos por unidades de estado sólido (SSDs).\r\n ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3-Reinstale o Sistema Operacional: Se o disco rígido estiver muito danificado, pode ser necessário reinstalar o sistema operacional em um novo disco rígido.\r\n 4- Verifique as Conexões: Verifique as conexões dos cabos SATA ou IDE do disco rígido na placa-mãe. Às vezes, conexões soltas podem causar problemas.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 4:
+                    {
+                        Console.WriteLine("1-Verifique o Layout do Teclado: Certifique-se de que o layout do teclado configurado no sistema operacional corresponda ao teclado físico. Às vezes, o teclado pode estar configurado incorretamente.\r\n 2- Limpe o Teclado: Se houver sujeira ou poeira sob as teclas, isso pode causar problemas. Desconecte o teclado e limpe-o cuidadosamente.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha o teclado limpo e livre de derramamentos.\r\nEvite comer ou beber perto do teclado.\r\nSubstitua teclas quebradas ou danificadas.\r\nAtualize os drivers do teclado, se necessário.");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Teste com outro Teclado: Conecte um teclado externo para verificar se o problema é específico do teclado ou do sistema.\r\n 4- Atualize os Drivers do Teclado: Verifique se há atualizações para os drivers do teclado em seu sistema operacional.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+
+                    }
+                case 5:
+
+                    {
+                        Console.WriteLine("1- Ative o TouchPad: Verifique se o TouchPad está ativado nas configurações do sistema. Muitos laptops têm uma tecla de atalho para ativar/desativar o TouchPad.\r\n 2- Reinicie o Driver do TouchPad: Vá para o Gerenciador de Dispositivos, encontre o driver do TouchPad e tente desativá-lo e ativá-lo novamente.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique se o TouchPad está ativado nas configurações.\r\nAtualize os drivers do TouchPad.\r\nLimpe o TouchPad para remover sujeira e oleosidade.\r\nConsidere usar um mouse externo temporariamente, se possível.");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Atualize os Drivers do TouchPad: Verifique se há atualizações para os drivers do TouchPad e instale-as, se disponíveis.\r\n 4- Verifique a Conexão Física: Se você estiver lidando com um laptop, abra-o e verifique a conexão do cabo do TouchPad com a placa-mãe.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 6:
+                    {
+                        Console.WriteLine("1- Verique se o computador está superaquecendo. Limpe o interior do computador de poeira e considere aplicar nova pasta térmica ao processador.\n 2- Verifique a Fonte de Alimentação: Problemas com a fonte de alimentação podem causar desligamentos. Verifique a conexão da fonte de alimentação e teste com uma fonte de alimentação diferente, se possível.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Monitore a temperatura interna do computador.\r\nVerifique se não há superaquecimento.\r\nCertifique-se de que a fonte de alimentação esteja funcionando corretamente.\r\nVerifique se não há malware ou problemas de software causando desligamentos. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique Problemas de Software: Às vezes, software malicioso ou instalações de sistema operacional corrompidas podem causar desligamentos inesperados. Faça uma varredura antivírus e considere reinstalar o sistema operacional.Verifique a Memória RAM: Problemas de RAM defeituosa podem causar desligamentos. Use a ferramenta de Verificação de Memória do Windows para testar a RAM.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 7:
+                    {
+                        Console.WriteLine("Substitua a Bateria CMOS: A bateria CMOS é responsável por manter a hora e a data quando o computador está desligado. Substitua-a por uma nova se estiver fraca.\r\nSincronize com um Servidor de Tempo: Configure o computador para sincronizar automaticamente a hora e a data com um servidor de tempo na Internet nas configurações do sistema operacional.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Substitua a bateria da placa-mãe (bateria CMOS) quando necessário.\r\nAtive a sincronização automática da data e hora com um servidor de tempo na Internet.\r\nMantenha seu sistema operacional atualizado. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique Configurações de Fuso Horário: Verifique se o fuso horário está configurado corretamente nas configurações do sistema operacional.\r\nAtualize o BIOS: Em alguns casos raros, uma versão desatualizada do BIOS pode causar problemas de data e hora. Verifique se há atualizações de BIOS disponíveis no site do fabricante da placa-mãe e siga as instruções para atualizá-lo. Tenha cuidado ao atualizar o BIOS, pois isso pode ser arriscado se não for feito corretamente.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 8:
+                    {
+                        Console.WriteLine("Limpeza do Mouse: Limpe o sensor óptico ou a bola do mouse (se for um mouse com bola) e verifique se não há sujeira ou detritos que possam afetar o funcionamento.\r\nMudança da Superfície: Use um mousepad adequado ou teste o mouse em uma superfície diferente para garantir que a superfície não seja o problema.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Limpe o sensor óptico ou a superfície de rastreamento.\r\nAtualize os drivers do mouse.\r\nUse um mousepad de qualidade para melhor rastreamento.\r\nCertifique-se de que o mouse não esteja com defeito. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique os Drivers do Mouse: Certifique-se de que os drivers do mouse estejam atualizados. Atualize-os ou reinstale-os, se necessário.\r\nSubstituição do Mouse: Se o problema persistir, considere substituir o mouse, pois pode haver um problema de hardware interno.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 9:
+                    {
+                        Console.WriteLine("Verifique a Conexão de Rede: Certifique-se de que todos os cabos de rede estejam corretamente conectados e que o roteador/modem esteja funcionando.\r\nReinicie o Roteador/Modem: Desconecte a energia do roteador ou modem por alguns segundos e depois reconecte-a para reiniciar o dispositivo.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique a conexão de rede e os cabos.\r\nReinicie o modem e o roteador.\r\nAtualize os drivers de rede.\r\nExecute solução de problemas de rede no seu sistema operacional. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique as Configurações de Rede: Verifique as configurações de rede do computador para garantir que não haja conflitos de endereço IP ou configurações incorretas.\r\nProblemas com o Provedor de Internet: Entre em contato com seu provedor de serviços de Internet para verificar se há problemas na rede deles que podem estar afetando sua conexão.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 10:
+                    {
+                        Console.WriteLine("Verifique os Cabos: Certifique-se de que os cabos de vídeo (VGA, HDMI, DisplayPort) estejam corretamente conectados ao monitor e ao computador.\r\nVerifique a Fonte de Alimentação do Monitor: Certifique-se de que o monitor esteja ligado e recebendo energia. Verifique a fonte de alimentação e experimente uma tomada diferente, se possível.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique se o monitor está ligado e corretamente conectado.\r\nVerifique se o cabo de vídeo está em boas condições.\r\nTeste o monitor com outro computador ou dispositivo.\r\nCertifique-se de que a placa gráfica do computador esteja funcionando. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Teste com Outro Monitor: Conecte o computador a outro monitor para verificar se o problema é com o monitor ou com o computador.\r\nVerifique a Placa de Vídeo: Se o monitor estiver funcionando com outro computador, pode haver um problema na placa de vídeo do seu computador. Certifique-se de que a placa de vídeo esteja corretamente instalada e que os drivers estejam atualizados.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 11:
+                    {
+                        Console.WriteLine("Verifique a Performance do Computador: Verifique se o computador está com recursos suficientes para executar os aplicativos. Feche aplicativos em segundo plano que possam estar consumindo recursos.\n Verifique a Conexão à Internet: Verifique a velocidade e a estabilidade da sua conexão à Internet. Uma conexão lenta pode causar atrasos ao carregar páginas da web. ");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique se há malware no sistema.\r\nDesinstale ou desative extensões ou plug-ins do navegador desnecessários.\r\nAtualize seu navegador para a versão mais recente.\r\nVerifique a velocidade da sua conexão à internet. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Limpe o Navegador: Limpe o cache, os cookies e o histórico do navegador. Isso pode melhorar o desempenho de navegação.\r\nVerifique a Atualização de Software: Verifique se há atualizações de software para o seu sistema operacional e aplicativos. As atualizações podem corrigir problemas de desempenho.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 12:
+                    {
+                        Console.WriteLine("Verifique a Alimentação: Certifique-se de que o cabo de alimentação esteja corretamente conectado à tomada e ao computador. Teste uma tomada diferente.\r\nVerifique o Botão de Alimentação: Verifique se o botão de alimentação está funcionando corretamente. Às vezes, ele pode ficar preso ou quebrar.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique a conexão da fonte de alimentação.\r\nCertifique-se de que o interruptor da fonte de alimentação (na fonte ou na tomada) esteja ligado.\r\nVerifique se a fonte de alimentação está funcionando.\r\nSe necessário, substitua a fonte de alimentação ou componentes defeituosos. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique a Fonte de Alimentação: Se você não ouvir nenhum sinal de atividade, como ventiladores girando, pode haver um problema com a fonte de alimentação. Considere testar com outra fonte de alimentação.\r\nVerifique Problemas de Hardware: Desconecte todos os periféricos e dispositivos externos e tente ligar o computador. Se funcionar, reconecte os dispositivos um por um para identificar o que está causando o problema.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 13:
+                    {
+                        Console.WriteLine("Verifique os Recursos do Computador: Verifique se o seu computador atende aos requisitos do software que você está executando. Se não, considere atualizar o hardware.\r\nLimpeza de Disco: Use a ferramenta Limpeza de Disco no Windows para remover arquivos temporários e desnecessários.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Remova programas e arquivos não utilizados.\r\nAtualize o hardware (mais RAM, SSD, etc.).\r\nDesfragmente regularmente o disco rígido (para HDDs).\r\nExecute verificação em busca de malware e otimize o sistema. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Desfragmentação do Disco: Realize uma desfragmentação do disco rígido para otimizar o desempenho do armazenamento.\r\nVerifique Malware: Faça uma varredura completa em busca de malware e vírus usando um programa antivírus confiável.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 14:
+                    {
+
+                        Console.WriteLine("Atualize o Software: Certifique-se de que todos os aplicativos e o sistema operacional estejam atualizados com as últimas versões e patches de segurança.\r\nRemova Software Desatualizado: Desinstale qualquer software desatualizado que não seja mais necessário no sistema.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha seu sistema operacional e aplicativos atualizados.\r\nHabilite atualizações automáticas, quando possível.\r\nVerifique regularmente por atualizações de software.\r\nConsidere desinstalar aplicativos obsoletos. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique Incompatibilidades: Verifique se há incompatibilidades entre os aplicativos instalados. Às vezes, conflitos de software podem causar problemas.\r\nFaça Backup dos Dados: Antes de atualizar ou desinstalar software, faça backup de seus dados importantes.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 15:
+                    {
+                        Console.WriteLine("Recuperação de Dados: Use software de recuperação de dados para tentar recuperar arquivos corrompidos ou perdidos.\r\nFaça Backup Regularmente: Mantenha backups regulares dos seus arquivos importantes em um local seguro.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Faça backup regularmente.\r\nEvite desligar o computador abruptamente durante gravações em disco.\r\nUse software confiável para recuperar arquivos corrompidos.\r\nMonitore a saúde do disco rígido para evitar falhas. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique a Integridade do Disco: Verifique se há erros no disco rígido usando a verificação de disco do Windows ou uma ferramenta de terceiros.\r\nEvite Desligamentos Incorretos: Evite desligar o computador abruptamente, pois isso pode causar corrupção de dados. Sempre desligue o computador corretamente.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 16:
+                    {
+
+                        Console.WriteLine("Execute uma Varredura de Vírus: Use um programa antivírus confiável para fazer uma varredura completa em busca de vírus e malware.\r\nMantenha o Antivírus Atualizado: Mantenha seu software antivírus e anti-malware atualizado para proteção contínua.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha um software antivírus atualizado.\r\nNão abra anexos de e-mails suspeitos.\r\nEvite visitar sites não confiáveis.\r\nMantenha o sistema operacional e aplicativos atualizados. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Evite Downloads Suspeitos: Não baixe software ou arquivos de fontes não confiáveis.\r\nEducação de Segurança: Eduque-se e a outros usuários sobre práticas seguras na internet, como não clicar em links suspeitos ou abrir anexos de e-mails desconhecidos.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+
+                case 17:
+                    {
+                        Console.WriteLine("Limpeza Interna: Verifique se o computador está livre de poeira e detritos internos, especialmente nas saídas de ar e nos ventiladores.\r\nReposicione o Computador: Certifique-se de que o computador esteja posicionado em um local com boa ventilação.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Limpe o interior do computador para remover poeira e detritos.\r\nVerifique se os ventiladores estão funcionando corretamente.\r\nMonitore a temperatura do sistema.\r\nConsidere adicionar mais ventilação ou trocar a pasta térmica. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Aumente a Ventilação: Adicione ventiladores adicionais ao gabinete, se possível, para melhorar o fluxo de ar.\r\nMonitorize a Temperatura: Use programas de monitoramento de temperatura para verificar se o computador está superaquecendo e tome medidas corretivas conforme necessário.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 18:
+                    {
+                        Console.WriteLine("Verifique a Porta USB: Teste o pendrive em diferentes portas USB para garantir que o problema não seja na porta.\r\nDriver de Dispositivo: Certifique-se de que os drivers de dispositivo USB estejam atualizados.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Teste o pendrive em outro computador para verificar se o problema é com o dispositivo.\r\nVerifique se as portas USB do seu computador estão funcionando.\r\nAtualize os drivers USB.\r\nUse um programa de recuperação de dados se o pendrive estiver corrompido. ");
+                            Console.WriteLine("Obrigado por usar nosso programa! Atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique com Outro Computador: Teste o pendrive em outro computador para verificar se ele é reconhecido. Se não for, pode haver um problema com o pendrive.\r\nFormate o Pendrive: Se o pendrive estiver vazio ou os dados não forem críticos, você pode tentar formatá-lo para corrigir problemas de reconhecimento.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 19:
+                    {
+                        Console.WriteLine("Verifique as Configurações de Áudio: Verifique se as configurações de áudio do sistema e do aplicativo estão configuradas corretamente.\r\nAtualize os Drivers de Áudio: Verifique se há atualizações para os drivers de áudio e instale-as, se disponíveis.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique as configurações de áudio e os drivers.\r\nCertifique-se de que os alto-falantes ou fones de ouvido não estejam com defeito.\r\nEvite volumes muito altos que possam danificar os alto-falantes. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique as Conexões de Áudio: Certifique-se de que todos os cabos de áudio estejam corretamente conectados aos alto-falantes ou fones de ouvido.\r\nVerifique por Malware: Às vezes, malware pode alterar as configurações de áudio. Faça uma varredura em busca de malware.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 20:
+                    {
+                        Console.WriteLine("Teste a RAM: Use uma ferramenta de teste de memória, como o MemTest86, para verificar se há erros na RAM.\r\nVerifique as Conexões de RAM: Verifique se os módulos de RAM estão corretamente instalados nas ranhuras da placa-mãe.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Execute testes de memória RAM para verificar a integridade.\r\nVerifique se os módulos de RAM estão bem encaixados.\r\nConsidere adicionar mais RAM ao sistema, se necessário.\r\nEvite sobrecarregar o sistema com aplicativos e tarefas pesados. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Limpe os Contatos da RAM: Desligue o computador, remova os módulos de RAM e limpe os contatos com um pano antiestático.\r\nSubstitua a RAM Defeituosa: Se você identificar módulos de RAM defeituosos, substitua-os por novos.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 21:
+                    {
+                        Console.WriteLine("Limpeza da Tela: Limpe a tela do dispositivo para remover qualquer sujeira ou detritos que possam causar toques fantasma.\r\nCalibração da Tela: Calibre a tela sensível ao toque nas configurações do sistema para melhorar a precisão.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Limpe regularmente a tela com um pano limpo e macio.\r\nEvite tocar na tela com objetos ou dedos sujos.\r\nVerifique se não há interferências elétricas próximas à tela. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("Verifique por Problemas de Hardware: Se o problema persistir, pode haver um problema de hardware na tela sensível ao toque que requer assistência técnica.\r\nAtualize o Software: Verifique se há atualizações de software do sistema operacional ou drivers de tela sensível ao toque e instale-as, se disponíveis.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 22:
+                    {
+                        Console.WriteLine("1- Restauração de Backup: A solução mais eficaz é ter um backup regular e confiável dos seus dados.\n Se você tiver um backup recente, poderá restaurar os dados perdidos a partir dele.\n Utilize sistemas de backup automatizados, como serviços em nuvem, unidades externas ou software de backup local, para garantir a segurança dos seus dados.\n 2- Recuperação de Dados Profissional:\nSe você não tiver um backup ou o backup não for suficiente, pode ser necessário recorrer a serviços de recuperação de dados profissionais.\nEmpresas especializadas em recuperação de dados possuem técnicas e ferramentas avançadas para recuperar dados de discos rígidos danificados, unidades USB, cartões de memória e outros dispositivos de armazenamento.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Faça backups regulares dos seus dados em locais seguros.\r\nUtilize serviços de armazenamento em nuvem para manter cópias dos seus arquivos.\r\nEvite ações arriscadas, como deletar arquivos importantes sem confirmação. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Software de Recuperação de Dados:\nExistem diversos programas de recuperação de dados disponíveis que podem ajudar a recuperar arquivos excluídos acidentalmente ou perdidos devido a falhas no sistema.\nAlguns exemplos populares incluem o Recuva, TestDisk, PhotoRec e EaseUS Data Recovery Wizard. Esses programas podem ser usados para recuperar dados em situações simples de perda.\n 4- Prevenção de Perda Futura:\nApós recuperar seus dados, é fundamental adotar práticas de prevenção para evitar futuras perdas. Isso inclui configurar backups regulares e manter seus sistemas e dispositivos atualizados.\nConsidere também utilizar serviços de armazenamento em nuvem para manter cópias dos seus dados importantes, o que pode ser uma solução eficaz contra a perda de dados.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 23:
+                    {
+                        Console.WriteLine("1- Exclua arquivos desnecessários: Remova arquivos antigos, duplicados ou não utilizados para liberar espaço.\n 2- Desinstale programas não utilizados: Desinstale aplicativos e programas que você não precisa mais.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha seu disco rígido organizado e livre de arquivos desnecessários.\r\nDesinstale aplicativos não utilizados para liberar espaço.\r\nMonitore o espaço disponível e considere a atualização para um disco maior, se necessário. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Utilize ferramentas de limpeza de disco: Use ferramentas integradas, como o \"Limpeza de Disco\" no Windows, para excluir arquivos temporários e desnecessários.\n 4- Mova arquivos para um armazenamento externo: Transfira arquivos grandes, como vídeos ou fotos, para um disco rígido externo ou serviço de armazenamento em nuvem.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 24:
+                    {
+                        Console.WriteLine("1- Atualize os drivers da placa gráfica: Verifique se os drivers da placa gráfica estão atualizados para a versão mais recente.\n 2- Reduza a taxa de atualização da tela: Diminua a taxa de atualização da tela nas configurações para ver se isso resolve o problema.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Atualize os drivers da placa gráfica para a versão mais recente.\r\nVerifique se há conflitos de software que podem estar causando o problema.\r\nMonitore a temperatura do computador para evitar superaquecimento. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Execute uma verificação de malware: Às vezes, malware pode causar problemas na exibição. Execute uma verificação antivírus.\n 4- Verifique a conexão do cabo: Certifique-se de que os cabos de vídeo estejam firmemente conectados à placa gráfica e ao monitor.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 25:
+                    {
+                        Console.WriteLine("1- Desligue o computador imediatamente: Se ocorrer um derramamento, desligue o computador e desconecte-o da fonte de energia.\n 2- Remova a bateria, se possível: Isso pode evitar danos adicionais à placa-mãe.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha líquidos longe do seu computador e dispositivos eletrônicos.\r\nUse tampas de proteção para teclado e capas impermeáveis quando apropriado.\r\nDesligue e desconecte o dispositivo imediatamente se ocorrer um derramamento. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Seque o computador: Use ar comprimido e coloque o computador em uma área seca para secar completamente.\n 4- Leve para reparo profissional: Se os danos persistirem, leve o computador a um técnico para avaliação e reparo.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 26:
+                    {
+                        Console.WriteLine("1- Reconfigure o reconhecimento facial: Atualize e recalibre a configuração de reconhecimento facial nas configurações do dispositivo.\n 2- Verifique a iluminação: Certifique-se de que a iluminação ao redor do seu rosto esteja boa e uniforme ao usar o reconhecimento facial.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Atualize regularmente as configurações de reconhecimento facial.\r\nGaranta boa iluminação ao usar reconhecimento facial.\r\nMantenha a câmera e a lente limpas e sem obstruções. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Remova óculos ou objetos: Algumas vezes, óculos ou outros objetos podem interferir no reconhecimento facial.\n 4- Use outras opções de desbloqueio: Se o reconhecimento facial continuar a ser um problema, configure uma senha ou PIN alternativo.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 27:
+                    {
+                        Console.WriteLine("1- Atualize os aplicativos: Certifique-se de que os aplicativos estejam atualizados para a versão mais recente.\n 2- Limpe o cache do aplicativo: Limpe o cache dos aplicativos problemáticos nas configurações do dispositivo.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Mantenha os aplicativos e o sistema operacional atualizados.\r\nEvite executar muitos aplicativos ao mesmo tempo em sistemas com recursos limitados.\r\nMonitore o uso de recursos do sistema por aplicativos em segundo plano. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Reinicie o dispositivo: Às vezes, simplesmente reiniciar o dispositivo pode resolver problemas de travamento de aplicativos.\n 4- Desinstale e reinstale o aplicativo: Se o problema persistir, desinstale o aplicativo problemático e reinstale-o.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 28:
+                    {
+                        Console.WriteLine("1- Feche aplicativos não utilizados: Encerre aplicativos em segundo plano para liberar recursos de sistema.\n 2- Atualize o hardware: Considere adicionar mais RAM, atualizar a CPU ou trocar para um disco de estado sólido (SSD) para melhorar o desempenho.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Considere atualizar o hardware, como adicionar mais RAM ou trocar para um SSD.\r\nEvite executar aplicativos pesados em sistemas com baixo poder de processamento.\r\nEncerre aplicativos em segundo plano quando não estiverem em uso. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Ajuste as configurações gráficas: Reduza a qualidade gráfica em jogos ou aplicativos exigentes.\n 4- Execute uma manutenção do sistema: Use ferramentas de otimização do sistema para limpar e otimizar o sistema operacional. ");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 29:
+                    {
+                        Console.WriteLine("1- Reinicie o roteador e o modem: Desligue e ligue novamente o roteador e o modem para reestabelecer a conexão.\n 2- Verifique a conexão física: Certifique-se de que todos os cabos estejam firmemente conectados. ");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Verifique a conexão física dos cabos e os conectores de rede.\r\nMantenha o firmware do roteador/modem atualizado.\r\nContate seu provedor de serviços de Internet para resolver problemas de conexão. ");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Mude para uma frequência Wi-Fi menos congestionada: Altere o canal Wi-Fi no roteador para evitar interferências.\n 4- Entre em contato com o provedor de serviços de Internet: Se o problema persistir, entre em contato com seu ISP para solucionar problemas na conexão. ");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+                case 30:
+                    {
+                        Console.WriteLine("1- Limpe o computador: Use ar comprimido para remover poeira e detritos que possam estar causando ruídos.\n 2- Verifique os ventiladores: Certifique-se de que os ventiladores do computador não estejam sujos ou desgastados.");
+                        Console.WriteLine("Seu problema foi resolvido? ");
+                        p2 = Console.ReadLine();
+                        if (p2 == "sim")
+                        {
+                            Console.WriteLine("Dicas de como você pode evitar esse problema: Limpe o interior do computador regularmente para remover poeira e detritos.\r\nVerifique os ventiladores e os componentes de resfriamento.\r\nEvite que o computador sofra impactos físicos que possam danificar os componentes internos.\r\n\r\n\r\n\r\n\r\n ");
+                            Console.WriteLine("");
+                            Console.WriteLine("Obrigado por usar nosso programa, atenciosamente, equipe do Infort Solution.");
+                        }
+                        else if (p2 == "não" || p2 == "nao" || p2 == "n")
+                        {
+                            Console.WriteLine("3- Verifique os cabos internos: Verifique se todos os cabos internos, como os cabos de alimentação e dados, estão bem conectados.\n 4- Monitore a temperatura: Use ferramentas de monitoramento de temperatura para verificar se o superaquecimento não está causando os ruídos.");
+                            Console.WriteLine("Se você não conseguiu resolver seu problema,lamento mas consideramos perda total.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Opção inválida, pode ter sido ocasionada por um erro de digitação. \n Deseja tentar de novo? ");
+                        }
+                        break;
+                    }
+
+
+            }
+            
+            Console.WriteLine("Faça sua avaliação ao nosso programa\n -> Digite 1 se você teve uma experiência positiva \n -> Digite 2 se você teve uma experiência negativa");
+            voto = int.Parse(Console.ReadLine());
+            if (voto == 1)
+            {
+                aval[0]++;
+            }
+            else if (voto == 2)
+            {
+                aval[1]++;
+            }
+            else 
+            {
+                Console.WriteLine("Digite um número válido");
+            }
+
+
+            
+            
+            
+        
+
+        Console.WriteLine("Resultado da avaliação: \n Pessoas satisfeitas:  " + aval[0]);
+        Console.WriteLine("Resultado da avaliação: \n Pessoas insatisfeitas:  " + aval[1]);
+
+
+        Console.WriteLine("Você deseja solucionar outro problema?");
+    p = Console.ReadLine();
+    Console.Clear();
+    if (p == "nao" || p == "não" || p == "n")
+    {
+        Console.ReadKey(); 
+    }
+    } while (p == "sim");
+} while (respi == "sim");
+
+Console.ReadKey();
